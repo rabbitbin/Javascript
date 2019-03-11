@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ending</title>
+
+<!-- CSS filter -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+<title>Pui's project</title>
+
+<script>
+var thisName = localStorage.getItem("person"); 
+
+var kungfuText = "Oh Yeah! It seems you are having fun with " + thisName + " <br>practicing Kung fu at Hebei."
+
+function kungFunction(){
+	document.getElementById("kungfu").innerHTML = kungfuText; 
+	document.getElementById("kungfu").style.textShadow = "1px 1px 2px #fff";
+}
+
+</script>
+
+</head>
+
+<body onload="kungFunction()">
+
+<div class="container-fluid" >
+  <!-- Content here -->
+  
+  <svg height="50" width="200">
+    <text id="header" x="20" y="35" fill="white" stroke="black">Time machine</text>
+  </svg>
+            
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Presentation</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+  
+<div class="row">
+  <div class="col-12" id="mountain">
+    
+     <p id="kungfu"></p>
+     <a class="goBack" href="index.html">Click here to try again!</a>     
+    
+  
+  </div>
+ </div>
+</div>
+
+<!-- My javascript -->
+<script src="js/javascript.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>

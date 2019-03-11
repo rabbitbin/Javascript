@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+<!-- CSS filter -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+<title>Presentation</title>
+
+
+</head>
+
+<body>
+
+<div class="container-fluid bg-image-stars" >
+
+ 
+  <svg height="50" width="200">
+    <text id="header" x="20" y="35" fill="white" stroke="black">Time machine</text>
+  </svg>
+            
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="presentation.html">Presentation</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+
+    <div class="row" id="present">
+    
+    <div class="col-2">
+      
+      <nav class="nav flex-column">
+        <a class="nav-link active" href="presentation.html">Dokumentering</a>
+        <a class="nav-link" href="steg.html">Steg för steg</a>
+        <a class="nav-link" href="game.html">Spel</a>
+        <a class="nav-link" href="kallor.html">K&auml;llor</a>
+      </nav>
+    
+    </div>
+    
+    <div class="col-10">
+        <div class="card bg-trans">
+            <div class="card-body">
+            <h3 class="card-title">Steg för steg </h3>
+              <h5 class="card-subtitle">Skissen med grundläggande idé</h5>
+              <p class="card-text" >
+              <img class="card-img-top w-50" style="float:right; padding: 0 0 10px 10px;" src="img/skiss.jpg"  alt="Card image cap" > 
+              Baserande på planeringen hade jag börjat att göra och hade en tydlig bild på mig. När jag fortsatt projekt då förstått 
+              jag att det var lång ifrån min idé från början. Men jag vill fokusera på koder istället av design och försökte att använda nya teknik som 
+              jag lärde mig. </p> <br>
+              
+             <h5 class="card-subtitle">Att transfers värdet från en html sida till en annan html sida</h5> 
+             <p class="card-text">
+             Efter skissen hade jag skapat en enkel HTML sidan, en CSS fil och en Javascript fil samt kopplar till online url som behöver för webbplatsen. 
+             Sedan kopplar jag innehåll med mina tidigare äventyr spel till HTML fil och Javascript. Många ändringar och nya teknisk metoder krävs för att 
+             lyckas visa spelet som original. I bland annan försökt jag använda SVG som skapar en grafisk bakground med bild och färg. Och jag användar 
+             input fält och visar texter på HTML sidan med hjälpa av innerHTML istället av prompt och alert.  
+             Jag har fastnat länge för att hitta redan på hur kan jag transportera värdet från en HTML sida till den annan HTML sida. Det fanns flera 
+             olika sätt att göra, såsom skapar enkel server och användar PHP, men det var komplex och lite utanför kursen. Det finns metoden som använder 
+             formulär med metod "GET" och "POST" sedan man kan hämta värdet från annan sida med hjälpa av PHP. Till sist, vald jag att använda "localStorage" 
+             objekt i Javascript. Jag förstått inte direkt hur jag skriver och var jag lägger koder. Men det var så skönt att jag lyckades slutligen och det 
+             var bara två råder. Jag hittade bra lösning på EJS kapitel 18 - HTTP and forms.  </p><br>
+               
+             <h5 class="card-subtitle">Jämförelse mellan Canvas och SVG</h5> 
+             <p class="card-text">  
+             Canvas är upplösningsberoende, du kan spara resultat bild som png eller jpg och det passar bra för grafiska interaktiv spel. Nackdelar 
+             är det stöd inte för "event handleds" och har dålig text renderings kapacitet. Däremot är SVG oberoende upplösning, stöd för "event handlers" 
+             och passar bra för applikation med stor renderings område såsom Google Maps. Nackdelar är det rendering är långsam om komplex och passar inte 
+             bra för spel applikationer. </p><br>
+                         
+            <h5 class="card-subtitle">Skapa en canvas spel</h5> 
+            <p class="card-text">  
+            Jag gjorde några research och tutorial. Sedan testade jag själv, lagt i mina bilder som vill använda på spelet. Det tog jag 
+            mycket tid att få hitta en lösning och får något som jag vill men då fastnade att jag har svårt att hämta värdet från spelet 
+            och transfers eller anpassa det till "Time Machine". Det hade blivit som ett enkel spel och jag kunde inte få i eller förstått 
+            inte så mycket från de kombinationerna gjorde jag själv. Även om jag hade lagt mycket tid för att hitta bilder och ljud men 
+            jag bestämt mig att hoppa över implementera det till Time Machine.
+            </p><br>
+
+            <h5 class="card-subtitle">Skapa en canvas animation</h5> 
+            <p class="card-text">  
+            Jag hittade några väldigt koolt animations tutorial. Jag provade på och det funkas inte allt! Jag undrade om min laptop var 
+            för gammal. Chrome har slut att uppdatera för Mac os x 10.6. Jag testade olika sätt och läste igenom eloquentjavascript. 
+            Svårigheten var på den requestAnimationFrame() jag kunde inte få rörelse. Till slut skapade jag en animation utan användningar 
+            av requestAnimationFrame(). Jag ska avvakta den till senare. </p><br>
+            
+            
+            <h5 class="card-subtitle">Tillgänglighet och rättighet</h5> 
+            <p class="card-text">  
+            Webbplatsen är avsedd för dator eller laptop skärmstorlek. Det betyder att detta inte är responsiv. Jag testade webbplatsen 
+            på Chrome on Mac. Eftersom det är lokal arbete och har svårt att få testa på sjater som erbjuda den här tjänsten. 
+            På andra sidan med rättighet, jag hade enbart använt bilder och ljud med Creative Comment (CC BY) Erkännande, jag kan använda 
+            verk och bearbetade versioner, även för kommersiella syften, så länge de erkänner mig vem som är upphovsman. Jag listade 
+            alla på källor. </p><br>
+              
+            </div>
+            <!-- Avsluta card-body -->
+          </div>
+          <!-- Avsluta card bg-trans -->
+      </div>
+      <!-- Avsluta col-10 -->
+    </div>
+    <!-- Avsluta row -->
+</div>
+<!-- Avsluta container -->
+
+<!-- My javascript -->
+<script src="js/javascript.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<!--<script src="http://cdn.jsdelivr.net/snap.svg/0.1.0/snap.svg-min.js" type="text/javascript" charset="utf-8"></script>-->
+
+</body>
+</html>

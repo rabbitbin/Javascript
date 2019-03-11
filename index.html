@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- CSS filter -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+<title>Pui's project</title>
+
+</head>
+
+<body>
+
+<div class="container-fluid bg-image-stars">
+  <!-- Content here -->
+  
+  <svg height="70" width="200">
+    <text id="header" x="20" y="35" fill="white" stroke="black">Time machine</text>
+  </svg>
+            
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto justify-content-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="presentation.html">Presentation</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+    
+<div class="row fix-height">
+  <div class="col-7">
+  
+  <svg id="grey-box-blur">
+  <!-- skapa suddig effekt bakgrund -->     
+    <filter id="blur-effect-1">
+        <feGaussianBlur stdDeviation="10" />
+    </filter>
+    
+     <rect id="grey-box" x="90" y="100" width="500" height="270" stroke="beige" stroke-width="3" fill="beige" />
+     
+      <text id="q-1" x="115" y="145">
+            <tspan x="115" fill="#005580">Hi! Here is a time machine that you can</tspan>
+            <tspan x="115" dy="26px" fill="#005580">travel back to the time or to the future!</tspan>
+            <tspan x="115" dy="26px" fill="#005580">You can bring one person with you.</tspan>
+      </text>
+      
+	<!-- foreignObject för att lägga på texter i SVG -->     
+      <foreignObject x="115" y="215" width="400" height="150">
+        <div class="input-group mb-3">
+          <input type="text" id="inName" name="Name" class="form-control" placeholder="What is this person name?" aria-label="Name" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button onclick="checkName()" class="btn btn-outline-secondary" type="button">Sumbit</button>
+          </div>
+        </div>
+        <p id="confirmTxt"></p>
+      </foreignObject>
+  
+  </svg> 
+
+  </div>
+  
+  <div class="col-5">
+  	<canvas id="canvasCol"></canvas>
+  </div>
+
+</div>
+
+</div>
+
+<!-- My javascript -->
+<script src="js/javascript.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/particles.js" type="text/javascript" charset="utf-8"></script>
+
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

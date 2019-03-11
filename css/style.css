@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#header {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size: 28px;
+}
+
+body {
+	background-image: url(../img/starfield_alpha.jpg) ;
+}	
+
+#fYear {
+	background-image: url(../img/ozone_5.png);
+}
+
+.fix-height{
+	height: 600px;
+}
+	
+#grey-box-blur { 
+	height: 500px; 
+	width: 100%; 
+}
+
+#grey-box { filter:url(#blur-effect-1); }
+
+#q-1 {
+	font-size: 18px;
+}
+
+#confirmTxt, #confirmYear {
+	font-size: 16px;
+	color: #339;
+}
+
+#confirmYear {
+	padding-top: 10px;
+}
+
+span {
+	font-size: 18px;
+	color:red;
+}
+
+.span2 {
+	padding: 10px 0 0 100px;
+	font-size: 16px;
+	color:#ff8533;
+}
+
+.span3 {
+	padding: 10px 0 0 100px;
+	font-size: 16px;
+	color:#ffffb3;
+}
+
+#name-submit {
+	margin-top: 10px;
+}
+
+/* mouse over link */
+a:hover {
+    color: #f26524 !important;
+	text-decoration: none !important;
+}
+
+#start {
+	margin: 0 0 0 10px;
+}
+
+#sky {
+	background-image: url(../img/ozone_3.jpg); 
+	background-repeat:no-repeat; 
+	background-position: center;
+	height: 600px;
+	position: relative;
+}
+
+#sky p, #sky a{
+	margin: 0;
+	position: absolute;
+	top: 20%;
+}
+
+#sky a{
+	padding: 100px 0 0 100px;
+}
+
+#fantasy {
+	color:#60C;
+	padding: 0px 0 0 100px;
+	font-size: 26px;
+}
+
+#mountain {
+	background-image: url(../img/ozone_2.jpg); 
+	background-repeat:no-repeat; 
+	background-position: center;
+	height: 600px;
+	position: relative;
+}
+
+#mountain p, #mountain a{
+	margin: 0;
+	position: absolute;
+	top: 30%;
+}
+
+#mountain a{
+	padding: 100px 0 0 100px;
+}
+	
+#kungfu {
+	color: #630;
+	padding: 20px 0 0 100px;
+	font-size: 26px;
+}
+
+/* CSS for presentation */
+.bg-trans{
+	background-color: rgba(0,0,0,0.1) !important;
+	color: #ededed;
+}	
+
+#present nav {padding: 10px 0 0 20px;}
+
+#present nav a, #present a {color: #00ace6;}
+
+#present .card-subtitle {padding: 10px 0 5px 0;;}
+
+#present .card-text {font-size: 14px;}
